@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-users-loader',
   imports: [],
   templateUrl: './users-loader.component.html',
-  styles: ``
+  styles: ``,
+  standalone: true
 })
 export class UsersLoaderComponent {
 

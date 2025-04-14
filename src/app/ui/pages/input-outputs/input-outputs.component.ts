@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-input-outputs',
   imports: [],
   templateUrl: './input-outputs.component.html',
-  styles: ``
+  styles: ``,
+  standalone: true
 })
 export class InputOutputsComponent {
 

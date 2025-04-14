@@ -1,11 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { HeavyLoadersSlowComponent } from '@core/shared-global/heavy-loaders-slow/heavy-loaders-slow.component';
+import { TitleComponent } from '../../title/title.component';
 
 @Component({
   selector: 'app-defer-views',
-  imports: [],
+  imports: [CommonModule, HeavyLoadersSlowComponent, TitleComponent],
   templateUrl: './defer-views.component.html',
-  styles: ``
+  styles: ``,
+  standalone: true
 })
-export class DeferViewsComponent {
+export default class DeferViewsComponent {
+  constructor() {}
 
+   
 }
