@@ -58,6 +58,14 @@ export const routes: Routes = [
                   ),
               },
               {
+                path: 'tailwind-elements',
+                title: 'Tailwind Elements',
+                loadComponent: () =>
+                  import(
+                    './ui/pages/tailwild-elements/tailwild-elements.component'
+                  ),
+              },
+              {
                 path: '',
                 redirectTo: 'control-flow',
                 pathMatch: 'full',
