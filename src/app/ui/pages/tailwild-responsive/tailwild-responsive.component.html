@@ -1,2 +1,87 @@
 <app-title [title]="'Tailwild-responsive'" />
 <br>
+<div class="bg-blue-500 sm:bg-green-500 md:bg-yellow-500 lg:bg-red-red-500 xl:bg-purple-500 2xl:bg-pink-500 p-5
+text-sm text-white sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+    <h1>Color segun el tamaño de la pantalla</h1>
+</div>
+<div class="pt-8 pb-8">
+    <!-- block: Hace que el elemento sea visible como un bloque en pantallas pequeñas (por defecto).
+    sm:hidden: Oculta el elemento en pantallas pequeñas o mayores (a partir del tamaño sm).
+    Resultado: Este párrafo será visible solo en pantallas pequeñas (menores al tamaño sm). -->
+    <p class="block sm:hidden">Visible solo en pantallas pequeñas</p>
+
+    <!-- hidden: Oculta el elemento por defecto.
+    sm:block: Hace que el elemento sea visible como un bloque en pantallas pequeñas o mayores (a partir del tamaño sm).
+    md:hidden: Oculta el elemento en pantallas medianas o mayores (a partir del tamaño md).
+    Resultado: Este párrafo será visible solo en pantallas medianas (entre los tamaños sm y md).     -->
+    <p class="hidden sm:block md:hidden">Visible solo en pantallas Mediana</p>
+
+    <!-- hidden: Oculta el elemento por defecto.
+    md:block: Hace que el elemento sea visible como un bloque en pantallas medianas o mayores (a partir del tamaño md).
+    Resultado: Este párrafo será visible solo en pantallas grandes (a partir del tamaño md). -->
+    <p class="hidden md:block">Visible solo en pantallas Grandes</p>
+</div>
+<div class="bg-gray-200">
+    <div class="container mx-auto max-w-md bg-white p-2">
+        <h1 class="text-2xl font-bold">Titulo</h1>
+        <p class="text-gray-700">Este contenedor esta centrado y se ajusta al ancho automaticamente</p>
+    </div>
+</div>
+<div class="flex justify-center items-center h-screen bg-gray-100 m-6"> 
+    <div class="w-32 h-32 bg-blue-400">Elemento 1</div>
+    <div class="w-32 h-32 bg-purple-400">Elemento 2</div>
+    <div class="w-32 h-32 bg-orange-400">Elemento 3</div>
+</div>
+<div class="flex  flex-col items-center gap-4 p-4 bg-green-500">
+    <div class="w-32 h-32 bg-blue-400">Elemento 1</div>
+    <div class="w-32 h-32 bg-purple-400">Elemento 2</div>
+    <div class="w-32 h-32 bg-orange-400">Elemento 3</div>
+</div>
+<div class="flex justify-between items-center h-32 px-4 bg-red-500">
+    <div class="w-32 h-32 bg-blue-400 flex items-center justify-center">Elemento 1</div>
+    <div class="w-32 h-32 bg-purple-400">Elemento 2</div>
+    <div class="w-32 h-32 bg-orange-400">Elemento 3</div>
+</div>
+<div class="grid grid-cols-3 gap-4 border mt-6 mb-6 border-orange-700">
+    <div class="border-orange-700 border-2 p-4">
+        <span>Elemento 1</span>
+    </div>
+    <div class="border-orange-700 border-2 p-4">
+        <span>Elemento 2</span>
+    </div>
+    <div class="border-orange-700 border-2 p-4">
+        <span>Elemento 3</span>
+    </div>
+    <div class="border-orange-700 border-2 p-4">
+        <span>Elemento 4</span>
+    </div>
+    <div class="border-orange-700 border-2 p-4">
+        <span>Elemento 5</span>
+    </div>
+</div>
+<br>
+<hr>
+<div  class="grid grid-cols-4 gap-4 mt-8">
+    <img src="https://placehold.co/400" alt="1" class="rounded-lg shadow-lg" />
+    <img src="https://placehold.co/400" alt="2" class="rounded-lg shadow-lg" />
+    <img src="https://placehold.co/400" alt="3" class="rounded-lg shadow-lg" />
+    <img src="https://placehold.co/400" alt="4" class="rounded-lg shadow-lg" />
+</div>
+<br>
+<div class="grid grid-cols-4 gap-4">
+    <div class="border-orange-700 border-2 p-4 col-span-2">
+        <span>Elemento 1</span>
+    </div>
+    <div class="border-orange-700 border-2 p-4">
+        <span>Elemento 2</span>
+    </div>
+    <div class="border-orange-700 border-2 p-4">
+        <span>Elemento 3</span>
+    </div>
+    <div class="border-orange-700 border-2 p-4">
+        <span>Elemento 4</span>
+    </div>
+    <div class="border-orange-700 border-2 p-4 col-span-3">
+        <span>Elemento 5</span>
+    </div>
+</div>
