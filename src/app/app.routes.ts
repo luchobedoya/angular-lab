@@ -66,6 +66,14 @@ export const routes: Routes = [
                   ),
               },
               {
+                path: 'tailwind-responsive',
+                title: 'Tailwind Responsive',
+                loadComponent: () =>
+                  import(
+                    './ui/pages/tailwild-responsive/tailwild-responsive.component'
+                  ),
+              },
+              {
                 path: '',
                 redirectTo: 'control-flow',
                 pathMatch: 'full',
