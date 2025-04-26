@@ -1,0 +1,14 @@
+<app-title [title]="'Typescript Utils '" />
+
+<div class="container m-8">
+    <h1>Ejemplos tubles</h1>
+    {{user}}
+    <br>
+    <div class="p-5">
+        <span class="text-red-500">Ejemplo de for</span>
+        @for(element of user; track $index) {
+            <p>{{element}}</p>
+        }
+    </div>
+   
+</div>

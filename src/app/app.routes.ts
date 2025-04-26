@@ -74,6 +74,14 @@ export const routes: Routes = [
                   ),
               },
               {
+                path: 'typescript-utils',
+                title: 'Typescript Utils',
+                loadComponent: () =>
+                  import(
+                    './ui/pages/typescript-utils/typescript-utils.component'
+                  ),
+              },
+              {
                 path: '',
                 redirectTo: 'control-flow',
                 pathMatch: 'full',
