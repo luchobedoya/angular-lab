@@ -82,6 +82,14 @@ export const routes: Routes = [
                   ),
               },
               {
+                path: 'countries',
+                title: 'Countries',
+                loadComponent: () =>
+                  import(
+                    './ui/pages/countries/countries.component'
+                  ),
+              },
+              {
                 path: '',
                 redirectTo: 'control-flow',
                 pathMatch: 'full',
